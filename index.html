@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"><!--Conjunto de caracteres permitido: castellano -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de texto </title>
+        <link rel="icon" href="./img/Logo.png"> <!-- Icono de la pestaña -->
+        <link rel="apple-touch-icon" href="./img/Logo.png"> <!-- Icono de la pestaña apples -->
+        <meta name="description" content="Sprint 01: Construye un encriptador de texto con Javascript">
+        <meta name="keywords" content="encriptador, texto, javascript">
+        
+        <link rel="stylesheet" href="css/normalize.css"> <!--Enlace al archivo css-->
+        <link rel="stylesheet" href="css/styles.css"> <!--Enlace al archivo css-->
+
+    </head>
+    <body>
+        <!-- Encabezado -->
+        <div class="contenedor_todo">
+            <header class="encabezado">
+                <img src="./img/Logo.png" alt="logo alura" class="encabezado__logo">
+                <h1 class="encabezado__titulo">Encriptador de texto</h1>
+            </header>
+
+            <!-- Seccion de texto de ingreso -->
+
+            <section class="contenedorIngreso">
+                <textarea class="contenedorIngreso_textoIngreso " name="texto" id="textarea" cols="30"
+                    rows="10" placeholder="Escribe aquí tu texto" autofocus></textarea>
+                <div class="informacion">
+                    <img src="./img/signo.svg" alt="signo de exclamacion" class="informacion__imagen">
+                    <p class="informacion__parrafo">Solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="cont__btn">
+                    <button class="btn btn_encriptar" id="encriptar">Cifrar</button>
+                    <button class="btn btn_desencriptar" id="desencriptar">Descifrar</button>
+                </div>
+            </section>
+
+            <!-- seccion resultado -->
+
+            <section class="contenedor__resultado ">
+                <h1>Resultado</h1>
+                <textarea style="display:none;" class="contenedor__resultado__texto" name="texto" id="resultado" cols="30"  rows="10" 
+                placeholder="" disabled></textarea>
+                <div id="ocultar">
+                    <img src="./img/lupa.jpg" alt="Buscador" class="ocultar__muneco">
+                    <h2 class="ocultar__titulo">No se encontro el mensaje</h2>
+                    <p class="ocultar__parrafo">Ingrese el mensaje a cifrar o descifrar.</p>
+                </div>
+                <div class="cont__btn__copiar">
+                    <button class="btn btn_copiar" id="copiar" hidden>Copiar</button>
+                </div>
+            </section>
+
+
+            <!-- Pie de pagina -->
+            <footer class="contenedor__">        
+                <p class="contenedor__copy"> Creative Commons 2024 - Challenge Oracle Next One (Juan Astaiza)</p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="./js/funcionalidad.js"></script>
+    </body>
+</html>
